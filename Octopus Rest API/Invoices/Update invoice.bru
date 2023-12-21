@@ -1,0 +1,15 @@
+meta {
+  name: Update invoice
+  type: http
+  seq: 6
+}
+
+put {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/invoices
+  body: json
+  auth: none
+}
+
+headers {
+  dossierToken: 
+}

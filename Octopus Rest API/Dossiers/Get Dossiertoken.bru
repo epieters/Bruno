@@ -1,0 +1,25 @@
+meta {
+  name: Get Dossiertoken
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers?dossierId={{dossierId}}&localeId=0
+  body: none
+  auth: none
+}
+
+query {
+  dossierId: {{dossierId}}
+  localeId: 0
+}
+
+headers {
+  Token: {{token}}
+  Content-Type: application/json
+}
+
+vars:post-response {
+  dossierToken: res.body.Dossiertoken
+}

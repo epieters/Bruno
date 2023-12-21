@@ -1,0 +1,22 @@
+meta {
+  name: Create Booking
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/financialdiversbookings
+  body: json
+  auth: none
+}
+
+headers {
+  dossierToken: 
+}
+
+body:json {
+  {
+    "attachments": [],
+    "financialDiversBookingServiceData": ""
+  }
+}

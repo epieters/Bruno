@@ -1,0 +1,27 @@
+meta {
+  name: Generate and send Invoices 
+  type: http
+  seq: 9
+}
+
+post {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/invoices/send
+  body: json
+  auth: none
+}
+
+headers {
+  dossierToken: 
+}
+
+body:json {
+  {
+    "bookyearKey": "",
+    "journal": "",
+    "documentSequenceNr": "",
+    "toDocumentSequenceNr": "",
+    "fromMailAddress": "",
+    "ccMailAddress": "",
+    "bccMailAddress": ""
+  }
+}

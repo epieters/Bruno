@@ -1,0 +1,24 @@
+meta {
+  name: Get invoice delivery state info
+  type: http
+  seq: 4
+}
+
+post {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/invoices/send/report/deliverystate
+  body: json
+  auth: none
+}
+
+headers {
+  dossierToken: 
+}
+
+body:json {
+  {
+    "bookyearKey": "",
+    "journal": "",
+    "documentSequenceNr": "",
+    "toDocumentSequenceNr": ""
+  }
+}

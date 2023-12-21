@@ -1,0 +1,15 @@
+meta {
+  name: Update Delivery Note
+  type: http
+  seq: 4
+}
+
+put {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/deliverynotes
+  body: json
+  auth: none
+}
+
+headers {
+  dossierToken: 
+}

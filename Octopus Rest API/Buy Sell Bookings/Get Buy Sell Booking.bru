@@ -1,0 +1,21 @@
+meta {
+  name: Get Buy Sell Booking
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/buysellbookings
+  body: none
+  auth: none
+}
+
+query {
+  bookyearId: 
+  journalKey: 
+  documentSeqNr: 
+}
+
+headers {
+  dossierToken: 
+}

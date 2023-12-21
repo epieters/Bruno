@@ -1,0 +1,19 @@
+meta {
+  name: Get Rappel information
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/rappels
+  body: none
+  auth: none
+}
+
+query {
+  expirationDate: 
+}
+
+headers {
+  dossierToken: 
+}

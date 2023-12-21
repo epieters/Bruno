@@ -1,0 +1,19 @@
+meta {
+  name: Get Modified Relations
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/relations/modified
+  body: none
+  auth: none
+}
+
+query {
+  ~modifiedTimeStamp: 
+}
+
+headers {
+  dossierToken: 
+}

@@ -1,0 +1,23 @@
+meta {
+  name: Insert balancing
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/balancings
+  body: json
+  auth: none
+}
+
+headers {
+  dossierToken: 
+}
+
+body:json {
+  {
+    "debetKey": "",
+    "creditKey": "",
+    "balanceAmount": ""
+  }
+}

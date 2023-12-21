@@ -1,0 +1,21 @@
+meta {
+  name: Get modified Financial Divers Bookings
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{{dossierId}}/financialdiversbookings/modified?bookyearId={{bookyearId}}&journalKey={{journalKey}}&modifiedTimeStamp=2020-02-06 14:55:00.000
+  body: none
+  auth: none
+}
+
+query {
+  bookyearId: {{bookyearId}}
+  journalKey: {{journalKey}}
+  modifiedTimeStamp: 2020-02-06 14:55:00.000
+}
+
+headers {
+  dossierToken: 
+}

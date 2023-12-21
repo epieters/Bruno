@@ -1,0 +1,21 @@
+meta {
+  name: Get modified Buy-Sell Bookings
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{{dossierId}}/buysellbookings/modified?bookyearId={{bookyearId}}&modifiedTimeStamp=2020-02-08 14:55:00.000
+  body: none
+  auth: none
+}
+
+query {
+  bookyearId: {{bookyearId}}
+  modifiedTimeStamp: 2020-02-08 14:55:00.000
+  ~journalKey: {{journalKey}}
+}
+
+headers {
+  dossierToken: 
+}

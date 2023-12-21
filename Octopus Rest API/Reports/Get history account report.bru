@@ -1,0 +1,25 @@
+meta {
+  name: Get history account report
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{{dossierId}}/reports/accounts/history
+  body: json
+  auth: none
+}
+
+headers {
+  dossierToken: {{dossierToken}}
+}
+
+body:json {
+  {
+    "fromBookyearKey": "15",
+    "toBookyearKey": "15",
+    "fromBookyearPeriodNr": "202301",
+    "toBookyearPeriodNr": "202304",
+    "accountNr": "U"
+  }
+}

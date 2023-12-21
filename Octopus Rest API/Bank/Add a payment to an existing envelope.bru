@@ -1,0 +1,15 @@
+meta {
+  name: Add a payment to an existing envelope
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/bank/enveloppes/{enveloppeKeyId}/add
+  body: json
+  auth: none
+}
+
+headers {
+  dossierToken: 
+}

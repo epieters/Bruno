@@ -1,0 +1,30 @@
+meta {
+  name: Authenticate
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://service.inaras.be/octopus-rest-api/v1/authentication
+  body: json
+  auth: none
+}
+
+headers {
+  softwareHouseUuid: {{softwareHouseUuid}}
+}
+
+body:json {
+  {
+    "user": "{{user}}",
+    "password": "{{password}}"
+  }
+}
+
+vars:post-response {
+  jwtToken: res.body.token
+}
+
+script:post-response {
+  bru.setEnvVar("token",res.body.token);
+}

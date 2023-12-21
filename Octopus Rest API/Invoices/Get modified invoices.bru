@@ -1,0 +1,21 @@
+meta {
+  name: Get modified invoices
+  type: http
+  seq: 8
+}
+
+get {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/invoices/modified?bookyearId={{bookyearId}}&journalKey={{journalKey}}&modifiedTimeStamp=2020-02-08 14:55:00.000
+  body: none
+  auth: none
+}
+
+query {
+  bookyearId: {{bookyearId}}
+  journalKey: {{journalKey}}
+  modifiedTimeStamp: 2020-02-08 14:55:00.000
+}
+
+headers {
+  dossierToken: 
+}

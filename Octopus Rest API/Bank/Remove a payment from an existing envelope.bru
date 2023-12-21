@@ -1,0 +1,15 @@
+meta {
+  name: Remove a payment from an existing envelope
+  type: http
+  seq: 11
+}
+
+post {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/bank/enveloppes/{enveloppeKeyId}/remove
+  body: json
+  auth: none
+}
+
+headers {
+  dossierToken: 
+}

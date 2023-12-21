@@ -1,0 +1,15 @@
+meta {
+  name: Remove a payment from the payment list
+  type: http
+  seq: 12
+}
+
+delete {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/bank/paymentlist/{paymentListKeyId}
+  body: none
+  auth: none
+}
+
+headers {
+  dossierToken: 
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Get Products
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{{dossierId}}/products
+  body: none
+  auth: none
+}
+
+headers {
+  dossierToken: {{dossierToken}}
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Get Invoice
+  type: http
+  seq: 5
+}
+
+get {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/invoices
+  body: none
+  auth: none
+}
+
+query {
+  bookyearId: 
+  journalKey: 
+  documentSeqNr: 
+}
+
+headers {
+  dossierToken: 
+}

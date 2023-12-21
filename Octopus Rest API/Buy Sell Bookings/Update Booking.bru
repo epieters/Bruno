@@ -1,0 +1,15 @@
+meta {
+  name: Update Booking
+  type: http
+  seq: 2
+}
+
+put {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/buysellbookings
+  body: json
+  auth: none
+}
+
+headers {
+  dossierToken: 
+}

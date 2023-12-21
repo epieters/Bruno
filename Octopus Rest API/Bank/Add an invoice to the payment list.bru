@@ -1,0 +1,36 @@
+meta {
+  name: Add an invoice to the payment list
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/bank/paymentlist
+  body: json
+  auth: none
+}
+
+query {
+  ~amount: 
+  ~reference: 
+}
+
+headers {
+  dossierToken: 
+}
+
+body:json {
+  {
+    "bookyearKey": "",
+    "journalKey": "",
+    "documentSequenceNr": "",
+    "documentDate": "",
+    "expiryDate": "",
+    "amount": "",
+    "currencyCode": "",
+    "relationKey": "",
+    "relationName": "",
+    "comment": "",
+    "reference": ""
+  }
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Update Bookings
+  type: http
+  seq: 2
+}
+
+put {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/financialdiversbookings
+  body: json
+  auth: none
+}
+
+headers {
+  dossierToken: 
+}

@@ -1,0 +1,26 @@
+meta {
+  name: Get history client report
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/reports/clients/history
+  body: json
+  auth: none
+}
+
+headers {
+  dossierToken: 
+}
+
+body:json {
+  {
+    "fromBookyearKey": "",
+    "toBookyearKey": "",
+    "fromBookyearPeriodNr": "",
+    "toBookyearPeriodNr": "",
+    "externalRelationId": "",
+    "relationId": ""
+  }
+}

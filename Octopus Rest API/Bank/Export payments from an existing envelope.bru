@@ -1,0 +1,22 @@
+meta {
+  name: Export payments from an existing envelope
+  type: http
+  seq: 4
+}
+
+post {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/bank/enveloppes/{enveloppeKeyId}/export
+  body: json
+  auth: none
+}
+
+headers {
+  dossierToken: 
+}
+
+body:json {
+  {
+    "isabelVersion": "",
+    "isBatchPayment": ""
+  }
+}

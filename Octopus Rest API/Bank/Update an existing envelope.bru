@@ -1,0 +1,23 @@
+meta {
+  name: Update an existing envelope
+  type: http
+  seq: 6
+}
+
+put {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/bank/enveloppes/{enveloppeKeyId}
+  body: json
+  auth: none
+}
+
+headers {
+  dossierToken: 
+}
+
+body:json {
+  {
+    "journalKey": "",
+    "payDate": "",
+    "status": ""
+  }
+}

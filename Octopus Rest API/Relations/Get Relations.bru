@@ -1,0 +1,22 @@
+meta {
+  name: Get Relations
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{{dossierId}}/relations
+  body: none
+  auth: none
+}
+
+query {
+  ~relationId: 
+  ~extRelationId: 
+  ~name: 
+  ~vatNr: 
+}
+
+headers {
+  dossierToken: {{dossierToken}}
+}

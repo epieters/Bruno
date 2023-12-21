@@ -1,0 +1,24 @@
+meta {
+  name: Add Attachement to booking
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/bookyears/{bookyearId}/bookings/attachements
+  body: json
+  auth: none
+}
+
+headers {
+  dossierToken: 
+  journalKey: 
+  documentSequennceNr: 
+}
+
+body:json {
+  {
+    "fileName": "",
+    "fileData": ""
+  }
+}

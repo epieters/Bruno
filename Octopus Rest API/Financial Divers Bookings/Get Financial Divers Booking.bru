@@ -1,0 +1,21 @@
+meta {
+  name: Get Financial Divers Booking
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/financialdiversbookings
+  body: none
+  auth: none
+}
+
+query {
+  bookyearId: 
+  journalKey: 
+  documentSeqNr: 
+}
+
+headers {
+  dossierToken: 
+}

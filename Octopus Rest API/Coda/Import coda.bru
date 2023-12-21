@@ -1,0 +1,19 @@
+meta {
+  name: Import coda
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/coda
+  body: json
+  auth: none
+}
+
+query {
+  ~publishPdfInDms: 
+}
+
+headers {
+  dossierToken: 
+}

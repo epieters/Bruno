@@ -1,0 +1,24 @@
+meta {
+  name: Generate Delivery Note
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/deliverynotes/generate
+  body: none
+  auth: none
+}
+
+query {
+  bookyearId: 
+  journalKey: 
+  documentSeqNr: 
+  publishPdfDocument: 
+  returnDeliveryNote: 
+  returnPdfDocument: 
+}
+
+headers {
+  dossierToken: 
+}

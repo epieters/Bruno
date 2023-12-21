@@ -1,0 +1,15 @@
+meta {
+  name: Get Financial Journal Balance
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/bookyears/{bookyearId}/journals/{journalKey}
+  body: none
+  auth: none
+}
+
+headers {
+  dossierToken: 
+}

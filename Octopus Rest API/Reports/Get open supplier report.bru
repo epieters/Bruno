@@ -1,0 +1,15 @@
+meta {
+  name: Get open supplier report
+  type: http
+  seq: 7
+}
+
+post {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/reports/suppliers/open
+  body: json
+  auth: none
+}
+
+headers {
+  dossierToken: 
+}

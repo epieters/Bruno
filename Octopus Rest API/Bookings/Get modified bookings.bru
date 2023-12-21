@@ -1,0 +1,20 @@
+meta {
+  name: Get modified bookings
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{{dossierId}}/bookyears/{{bookyearId}}/bookings/modified?journalTypeId=3&modifiedTimeStamp=2000-08-01 14:52:45.000
+  body: none
+  auth: none
+}
+
+query {
+  journalTypeId: 3
+  modifiedTimeStamp: 2000-08-01 14:52:45.000
+}
+
+headers {
+  dossierToken: {{dossierToken}}
+}

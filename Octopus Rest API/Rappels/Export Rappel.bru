@@ -1,0 +1,20 @@
+meta {
+  name: Export Rappel
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/rappels/export
+  body: none
+  auth: none
+}
+
+query {
+  relationId: 
+  rappelId: 
+}
+
+headers {
+  dossierToken: 
+}

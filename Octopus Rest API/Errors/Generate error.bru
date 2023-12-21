@@ -1,0 +1,16 @@
+meta {
+  name: Generate error
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://service.inaras.be/octopus-rest-api/v1/error
+  body: none
+  auth: none
+}
+
+query {
+  errorCode: 
+  ~localeId: 
+}

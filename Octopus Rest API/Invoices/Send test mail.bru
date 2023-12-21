@@ -1,0 +1,21 @@
+meta {
+  name: Send test mail
+  type: http
+  seq: 10
+}
+
+post {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/invoices/send/testmail/{language}
+  body: none
+  auth: none
+}
+
+query {
+  journalKey: 
+}
+
+headers {
+  dossierToken: 
+  fromAddress: 
+  toAddress: 
+}

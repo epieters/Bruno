@@ -1,0 +1,19 @@
+meta {
+  name: Get Accounts
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{{dossierId}}/accounts?bookyearId=12
+  body: none
+  auth: none
+}
+
+query {
+  bookyearId: 12
+}
+
+headers {
+  dossierToken: {{dossierToken}}
+}

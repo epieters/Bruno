@@ -1,0 +1,15 @@
+meta {
+  name: Get Costcentres
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{{dossierId}}/costcentres
+  body: none
+  auth: none
+}
+
+headers {
+  dossierToken: {{dossierToken}}
+}

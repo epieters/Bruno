@@ -1,0 +1,19 @@
+meta {
+  name: Get modified balancings
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{{dossierId}}/balancings/modified?modifiedTimeStamp=2020-02-08 14:55:00.000
+  body: none
+  auth: none
+}
+
+query {
+  modifiedTimeStamp: 2020-02-08 14:55:00.000
+}
+
+headers {
+  dossierToken: {{dossierToken}}
+}

@@ -1,0 +1,26 @@
+meta {
+  name: Generate Invoice 
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/invoices/generate
+  body: none
+  auth: none
+}
+
+query {
+  bookyearId: 
+  journalKey: 
+  documentSeqNr: 
+  returnInvoice: 
+  publishPdfDocument: 
+  publishEInvoice: 
+  returnPdfDocument: 
+  returnEInvoiceXml: 
+}
+
+headers {
+  dossierToken: 
+}

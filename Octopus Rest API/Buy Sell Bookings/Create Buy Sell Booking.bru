@@ -1,0 +1,22 @@
+meta {
+  name: Create Buy Sell Booking
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://service.inaras.be/octopus-rest-api/v1/dossiers/{dossierId}/buysellbookings
+  body: json
+  auth: none
+}
+
+headers {
+  dossierToken: 
+}
+
+body:json {
+  {
+    "buySellBookingServiceData": "",
+    "attachments": []
+  }
+}
